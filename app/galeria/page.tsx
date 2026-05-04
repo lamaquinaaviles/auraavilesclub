@@ -17,7 +17,7 @@ export default function Galeria() {
     "/images/DSC05337 copia.JPG",
   ];
 
-  const videos = ["/videos/sobre.mp4"];
+  
 
   return (
     <div className="relative min-h-screen overflow-hidden text-white">
