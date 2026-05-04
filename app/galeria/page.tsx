@@ -17,8 +17,6 @@ export default function Galeria() {
     "/images/DSC05337 copia.JPG",
   ];
 
-  
-
   return (
     <div className="relative min-h-screen overflow-hidden text-white">
       <div className="absolute inset-0 -z-10">
@@ -44,7 +42,7 @@ export default function Galeria() {
           </h1>
 
           <p className="mt-6 max-w-3xl text-lg leading-8 text-white/70">
-            Una selección de imágenes y vídeos que reflejan la atmósfera,
+            Una selección de imágenes que reflejan la atmósfera,
             la energía y la identidad visual del club.
           </p>
 
@@ -64,38 +62,16 @@ export default function Galeria() {
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"
                   loading="lazy"
-                  quality={60}
+                  quality={75}
                   className="object-cover transition duration-500 group-hover:scale-105"
                 />
               </div>
             ))}
           </div>
 
-          <div className="mt-24">
-            <h2 className="mb-8 text-4xl font-semibold">
-              Momentos en movimiento
-            </h2>
-
-            <div className="grid gap-8 md:grid-cols-2">
-              {videos.map((src) => (
-                <div
-                  key={src}
-                  className="overflow-hidden rounded-[2rem] border border-white/10 bg-black/40 backdrop-blur"
-                >
-                  <video
-                    src={src}
-                    controls
-                    preload="metadata"
-                    className="w-full object-cover"
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
-
           <a
             href="/"
-            className="fixed top-28 left-8 z-50 rounded-full border border-white/20 bg-black/50 backdrop-blur-md px-6 py-3 text-sm uppercase tracking-[0.18em] transition hover:border-[#f4b498] hover:text-[#f4b498]"
+            className="fixed top-28 left-8 z-50 rounded-full border border-white/20 bg-black/50 backdrop-blur-md px-6 py-3 text-sm uppercase tracking-[0.18em] hover:border-[#f4b498] hover:text-[#f4b498] transition"
           >
             ← Inicio
           </a>

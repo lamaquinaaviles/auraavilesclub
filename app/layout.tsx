@@ -1,16 +1,13 @@
+export const metadata = {
+  title: "Aura Avilés Club | Copas y Discoteca en Avilés",
+  description: "Club exclusivo en Avilés. Copas premium, DJs, eventos y ambiente elegante en Aura Avilés Club.",
+  keywords: "discoteca Avilés, copas Avilés, club Avilés, nightlife Avilés",
+};
 import "./globals.css";
 import Script from "next/script";
 import Navbar from "../components/Navbar";
 
-export const metadata = {
-  title: "Aura Avilés Club",
-  description: "Aura Avilés Club",
-  icons: {
-    icon: "/icon.png",
-    shortcut: "/icon.png",
-    apple: "/icon.png",
-  },
-};
+
 
 export default function RootLayout({
   children,
